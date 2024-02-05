@@ -83,6 +83,9 @@ ul{
 .tasks:has(.check_box.active){
     background-color: #cc0066;
 }
+.tasks:has(.check_box.active) h3{
+    text-decoration: line-through;
+}
 .check_and_remove_btns{
     display: flex;
     align-items: center;
@@ -107,4 +110,8 @@ ul{
 
 .check_box.active .check_box_icon{
     opacity: 1;
+}
+
+h3.active{
+    text-decoration:overline;
 }
