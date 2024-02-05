@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+button{
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+}
+ul{
+    direction: none;
+}
+.standart_text_size{
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 20px;
+    line-height: 20px;
+    letter-spacing: 2px;
+}
+.large_text_size{
+    font-family: 'Poppins', sans-serif;
+    font-size: 28px;
+    font-weight: 25px;
+    line-height: 25px;
+    letter-spacing: 2px;
+
+}
+.container{
+    display: flex;
+    height: 100vh;
+    background-color: #8758ff;
+    padding-top: 100px;
+    justify-content: center;
+}
+.to_do_list_wrapper{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 40px;
+    background-color: #1A1A40;
+    width: 35%;
+    height: fit-content;
+    border-radius: 10px;
+}
+.title_of_container{
+    color: #FFF;
+}
+.add_section_wrapper{
+    display: flex;
+}
+.input_panel{
+    border: 1px solid #8758ff;
+    background-color: transparent;
+    outline: none;
+    color: #FFF;
+    padding: 10px;
+    width: 350px;
+}
+.input_panel::placeholder {
+    color: #ffffff4d;
+}
+.add_btn{
+    background-color: #8758ff;
+    color: #FFF;
+}
+.list_of_tasks{
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    width: 100%;
+    padding-inline: 65px ;
+    color: #FFF;
+}
+
+.tasks{
+    display: flex;
+    justify-content: space-between;
+    border-radius: 18px;
+    background-color: #8758ff;
+    padding: 10px 15px;
+    align-items: center;
+    transition: all linear 0.2s;
+}
+.tasks:has(.check_box.active){
+    background-color: #cc0066;
+}
+.check_and_remove_btns{
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+}
+.check_box_icon{
+    font-size: 12px;
+    opacity: 0;
+    transition: all linear 0.2s;
+}
+.check_box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 1px solid #1A1A40;
+    cursor: pointer;
+}
+
+
+.check_box.active .check_box_icon{
+    opacity: 1;
+}
